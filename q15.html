@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging Grid Layout Issues</title>
+    <style>
+        .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3,100px);
+ grid-template-areas: " 1 2 3"
+ "4 1 2"
+ "3 3 3";
+  gap: 10px;
+  
+    }
+    .container>div{
+        border: 1px solid black;
+        padding: 100%;
+    }
+    .container>div:nth-child(1){
+            background-color: rgb(180, 84, 29);
+            grid-area: 1;
+        } .container>div:nth-child(2){
+            background-color: rgb(168, 159, 224);
+            grid-area: 2; 
+        } .container>div:nth-child(3){
+            background-color: rgb(118, 112, 105);
+            grid-area: 3;
+        } .container>div:nth-child(4){
+            background-color: rgb(142, 210, 54);
+            grid-area: 4;
+        } .container>div:nth-child(5){
+            background-color: rgb(180, 84, 29);
+            grid-area: 1;
+        } .container>div:nth-child(6){
+            background-color: rgb(168, 159, 224);
+            grid-area: 2;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div></div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+             </div>
+      
+</body>
+</html>
