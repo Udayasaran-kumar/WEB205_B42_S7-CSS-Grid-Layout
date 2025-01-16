@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Basic Grid Layout</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,30%);
+            grid-template-rows: repeat(2,100px);
+            gap: 10px;
+            place-items:center;
+        }.container>div{
+            border: 1px solid black;
+        }
+        .container>div:nth-child(1){
+            background-color: bisque;
+        } .container>div:nth-child(2){
+            background-color: rgb(132, 86, 30);
+        } .container>div:nth-child(3){
+            background-color: rgb(118, 112, 105);
+        } .container>div:nth-child(4){
+            background-color: rgb(212, 127, 24);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+        <div>item 4</div>
+       
+    </div>
+</body>
+</html>
